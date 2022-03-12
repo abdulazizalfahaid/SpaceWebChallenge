@@ -1,0 +1,11 @@
+
+if (isset($_GET['passwd'])) {
+        if (hash("BASE64", $_GET['passwd']) == 'cm9vdENZUwo='){
+
+       // Find the hidden DIR to get the plain text passwd or decrypt the Hash!!
+
+            echo "<script>alert('$flag')</script>";
+        } else {
+            echo "<script>alert('Wrong!');</script>";
+    }
+}
